@@ -1,1 +1,1 @@
-This app displays student profile data pulled from an API
+This app pulls student profile data from an API and displays each student in their own individual cards.
