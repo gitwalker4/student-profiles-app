@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  background-color: thistle;
+  color: white;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +9,102 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 50px;
+}
+
+.card-div::-webkit-scrollbar { 
+  width: 0 !important 
+}
+
+.card-div {
+  height: 75vh;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: rgba(184, 216, 224, 0.781);
+  overflow-y: scroll;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.student {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.student-cards {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.student-pic {
+  height: 100px;
+  width: 100px;
+  margin: 0px 30px;
+  border-radius: 50%;
+  border: solid 1px grey;
+}
+
+.name {
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.student-details {
+  padding-left: 20px;
+  line-height: 10px;
+  color: lightslategrey;
+}
+
+.student-details > p {
+  margin-bottom: 5px;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+  line-height: 0px;
+}
+
+.scores {
+  padding-left: 10px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  background-color: none;
+}
+
+.button-show,
+.button-hide {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  color:rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.hidden {
+  display: none;
 }
